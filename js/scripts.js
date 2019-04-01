@@ -49,6 +49,18 @@ $(document).ready(function() {
 
   //basically it goes for([varible definition]var i = 0; [equation to define number of loops]i < 6; [increment the variable]i += 1);
 
+  //what a for loop would look like to accomplish the same thing as the while loop
+
+  for(var i = 0; i < 6; i += 1){
+    $("." + blanks[i]).text(loudAns[i]);
+  }; //as you see the interior code is the same except we move the i += 1 inside of the loop parameters itself. Which is where we declare variable i as well.
+
+
+  //if the length of the array we are looping through is a length that is defined by the user (the amount of elements in the array changes) use arrayName.length instead of the "6" in (i < 6) so the while loop changes to while(i <= arrayName.length) and the for loop changes to for(var i = 0; i <= arrayName.length; i += 1); It needs the <= sign instead of the < sign so that the last element inside of the array gets used. For Ex. if our array has 6 elements we want the loop to run 6 times. 1 time for each element. and (i < 6) will only run to through the 5th element. But (i <= 6) will run when i === 6;
+
+
+// (i <= arrayName.length) will always run the same amount of time that a forEach function loop would. (if you increment i by 1);
+
 
 
 
