@@ -27,13 +27,7 @@ $(document).ready(function() {
 
 
 
-//this same loop written as a for loop would look like this
-//for(var i = 0; i < 6; i += 1){
-//looped code here
-//}
 
-
-//basically it goes for([varible definition]var i = 0; [equation to define number of loops]i < 6; [increment the variable]i += 1);
 
 
 
@@ -45,6 +39,15 @@ $(document).ready(function() {
        i += 1; //after grabbing everything out of index blanks[0] and loudAns[0] we want to move onto the next element in the array. so we add 1 to i which is at 0. So i is now 1 after this line of code runs. Now the loop starts over. if you look back up our blanks[i] and loudAns[i] (which were previously blanks[0] and loudAns[0]) are now blanks[1] and loudAns[1] because we added 1 to i. Changing its value to 1. this repeats over and over until our statement (i < 6) is no longer true. This will check every index in our array from blanks[0] up to blanks[5]. and same with loudAns[0] to loudAns[5]
 
     };
+
+
+  //this same loop written as a for loop would look like this
+  //for(var i = 0; i < 6; i += 1){
+  //looped code here
+  //}
+
+
+  //basically it goes for([varible definition]var i = 0; [equation to define number of loops]i < 6; [increment the variable]i += 1);
 
 
 
